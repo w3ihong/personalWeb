@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --primary: #D7C49EFF;
+  --secondary: #343148FF;
+  --accent:white;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary: #343148FF;
+    --secondary: #D7C49EFF;
+    --accent: white;
+  }
+}
+
+body {
+  color: var(--secondary);
+  background: var(--primary);
+}
