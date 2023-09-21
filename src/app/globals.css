@@ -4,20 +4,21 @@
 
 
 :root {
-  --primary: #D7C49EFF;
-  --secondary: #343148FF;
+  --primary: rgb(213, 200, 175);
+  --secondary: rgb(35, 33, 48);
   --accent:white;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
-    --primary: #343148FF;
-    --secondary: #D7C49EFF;
+    --primary: rgb(35, 33, 48);
+    --secondary:rgb(213, 200, 175);
     --accent: white;
   }
-}
+} */
 
 body {
   color: var(--secondary);
   background: var(--primary);
+  
 }
