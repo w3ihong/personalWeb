@@ -10,8 +10,9 @@ const config: Config = {
     extend: {
       colors:
       {
-        pri :'#343148FF',
-        sec :'#D7C49EFF',
+        pri : 'rgb(213, 200, 175)',
+        sec :'rgb(35, 33, 48)',
+        priDark :'rgb(199, 184, 155)',
       }
     },
   },
