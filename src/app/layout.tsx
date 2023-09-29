@@ -20,7 +20,7 @@ export default function RootLayout({children}: {
       <body>
         <main>
           <Nav/>
-          <div className=' mx-6 md:mx-16 lg:mx-32 xl:mx-64'>
+          <div className=' mx-6 md:mx-16 lg:mx-32 xl:mx-64 '>
             {children}
           </div>
           <Footer/>

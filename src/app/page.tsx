@@ -1,61 +1,113 @@
+'use client'
+import { useState, useRef, useEffect } from "react"
 import Image from "next/image"
 import profilePic from "public/mirror.jpg"
+import Card from "./components/card"
+import logo from "public/mainLogoCrop.png"
 
 export default function Home() {
+
+  const [isIntersecting, setIsIntersecting] = useState(false);
+  const ref = useRef(null);
+
+  const callBackFunc = (entries) => {
+    const [entry] = entries
+    setIsIntersecting(entry.isIntersecting)
+  }
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(callBackFunc,{ rootMargin: "-300px" });
+    console.log(isIntersecting);
+    observer.observe(ref.current);
+
+    return () => observer.disconnect();
+  }, [isIntersecting]);
+
+  useEffect(() => {
+    if (isIntersecting) {
+      ref.current.querySelectorAll(".AOS").forEach((el) => {
+        el.classList.add("slide-in");
+      });
+    } else {
+      ref.current.querySelectorAll(".AOS").forEach((el) => {
+        el.classList.remove("slide-in");
+      });
+    }
+  }, [isIntersecting]);
+
   return (
     <main>
+      <div /*className=" snap-y snap-mandatory h-screen overflow-scroll"*/>
 
-      {/* Hero */}
-      <section id ="hero" className="flex h-screen flex-col items-center justify-center">
-        <h1 className=" text-7xl ">Welcome</h1>
-      </section>
+        {/* Hero */}
+        <section id ="hero" className=" snap-start flex h-screen items-center justify-center">
+          <div className="flex flex-col">
+            <div className=" flex flex-row justify-center">
+              <div className=" flex justify-end px-3 py-1 md:py-2">
+                <h2 className="flex items-end text-base md:text-2xl h-full">I'm</h2>
+              </div>
+              <div className="">
+                <div className=" flex item-start justify-start">
+                  <Image className="w-[13rem] md:w-[19.25rem]" alt="large logo"src={logo}/>
+                </div>
+                <h1 className="text-5xl md:text-7xl ">Welcome</h1>
+                <h1 className="text-5xl md:text-7xl">Wei Hong</h1>
+              </div>
+            </div>
+            <div className="flex flex-row items-center">
+              <div className=" flex justify-end p-3">
+                <h2 className="flex text-base md:text-2xl">I'm </h2>
+              </div>
+              <h1 className="text-base md:text-2xl">tryna get through life</h1>
 
-      {/* About me */}
-      <section id="about" className="flex relative h-screen flex-col md:flex-row items-center justify-center p-10">
-        {/* top decorative box */}
-        <div className="absolute hidden md:block w-1/3 bg-slate-600 h-1/2 md:h-2/5 top-0"></div>
-        {/* Image container */}
-        <div className="flex w-4/5 md:w-2/5 m-5 max-w-[20rem]">
-          <Image
-            src={profilePic}
-            alt="Picture of me"
-            className="z-10"
-          />
-          {/* chinese text */}
-          <span className=" absolute z-20 w-1/4 right-[3.5rem] font-bold text-[16rem] text-yellow-50">伟宏</span>
-        </div>
-        {/* text container */}
-        <div className="flex flex-col w-4/5 h-1/2 md:h-full justify-start"> 
-          <div className="flex items-end md:h-2/5 ">
-            {/* mobile decorative box */}
-            <div className="absolute bg-slate-600 md:hidden w-1/2 h-[16rem] z-0 left-9"></div>
-            <h1 className=" text-2xl py-3 md:text-3xl md:py-5 text-white z-10">About me</h1>
+            </div>
           </div>
-          <div className="flex md:h-3/5 z-30 pt-2">
-            <p className=" text-sm md:text-base">Lorem ipsum dolor sit amet, et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </section>
+
+        {/* About me */} 
+        <section id="about" ref={ref} className=" snap-start flex relative h-screen flex-col md:flex-row items-center justify-center p-10">
+          {/* top decorative box */}
+          <div className=" AOS absolute hidden md:block w-1/3 bg-slate-600 h-1/2 md:h-2/5 top-0"></div>
+          {/* Image container */}
+          <div className=" flex w-4/5 md:w-2/5 m-5 max-w-[20rem]">
+            <Image
+              src={profilePic}
+              alt="Picture of me"
+              className="z-10 AOS from-L"
+            />
+            {/* chinese text */}
+            <span className=" absolute z-20 w-1/4 right-[3.5rem] font-bold text-[16rem] text-yellow-50">伟宏</span>
           </div>
-        </div>
-      </section>
+          {/* text container */}
+          <div className="flex flex-col w-4/5 h-1/2 md:h-full justify-start"> 
+            <div className="flex items-end md:h-2/5 ">
+              {/* mobile decorative box */}
+              <div className="absolute bg-slate-600 md:hidden w-1/2 h-[16rem] z-0 left-9"></div>
+              <h1 className="AOS from-T text-2xl py-3 md:text-3xl md:py-5 text-white z-10">About me</h1>
+            </div>
+            <div className="AOS from-B flex md:h-3/5 z-30 pt-2">
+              <p className=" text-sm md:text-base">Lorem ipsum dolor sit amet, et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
+        </section>
 
-      {/* Projects section */}
-      <section id="projects" className="flex relative flex-col h-screen items-center justify-center bg-slate-600 px-5">
-        <div className="flex self-start items-center h-1/4 z-30 pl-3">
-          <h1 className=" text-5xl text-white">Projects</h1>
-        </div>
-        <div className=" flex items-center justify-center h-3/5 w-full z-10 bg-white/40 mb-5"> 
-          <p>
-            Kinda empty rn 
-            make it horizontal scroll
-          </p>
-        </div>
-        {/* Derocative Bar */}
-        {/* <div className=" absolute w-full h-2/5 bg-priDark"></div> */}
-      </section>
+        {/* Projects section */}
+        <section id="projects" className=" snap-start flex relative flex-col h-screen items-center justify-center px-5">
+          <div className="absolute bg-slate-600 h-3/5 w-full top-0"></div>
+          <div className=" flex self-start items-end h-1/5 z-30 pl-3 pb-5">
+            <h1 className="text-3xl  md:text-5xl text-white">Projects</h1>
+          </div>
+          <div className=" flex relative flex-row overflow-x-auto items-center gap-4 justify-center h-3/5 w-full z-10 bg-white/40"> 
+            <Card/>
+            <Card/>
+            <Card/>
+          </div>
+        </section>
 
-      <section id="contact" className="flex min-h-screen flex-wrap items-center justify-center">
-        <h1>Contact me </h1> 
-      </section>
-
+        <section id="contact" className=" snap-start flex min-h-screen flex-wrap items-center justify-center">
+          <h1>Contact me </h1> 
+        </section>
+      </div>
     </main>
   )
 }

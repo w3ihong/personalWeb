@@ -8,6 +8,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily:
+      {
+        
+      },
       colors:
       {
         pri : 'rgb(213, 200, 175)',
