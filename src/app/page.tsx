@@ -70,7 +70,7 @@ export default function Home() {
           {/* top decorative box */}
           <div className=" AOS absolute hidden md:block w-1/3 bg-slate-600 h-1/2 md:h-2/5 top-0"></div>
           {/* Image container */}
-          <div className=" flex w-4/5 md:w-2/5 m-5 px-2 showBorder justify-center md:justify-end">
+          <div className=" flex w-4/5 md:w-2/5 m-5 px-2  justify-center md:justify-end">
             <Image
               src={profilePic}
               alt="Picture of me"
@@ -78,7 +78,7 @@ export default function Home() {
             />
           </div>
           {/* text container */}
-          <div className="flex flex-col w-5/6 md:w-3/5  md:h-full justify-center  showBorder"> 
+          <div className="flex flex-col w-5/6 md:w-3/5  md:h-full justify-center "> 
             <div className="flex items-end md:h-2/5 ">
               {/* mobile decorative box */}
               <div className="absolute bg-slate-600 md:hidden w-1/2 h-[16rem] z-0 left-0"></div>
