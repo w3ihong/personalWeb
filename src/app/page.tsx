@@ -59,7 +59,7 @@ export default function Home() {
               <div className=" flex justify-end p-3">
                 <h2 className="flex text-base md:text-2xl">I'm </h2>
               </div>
-              <h2 className="text-base md:text-2xl">tryna get through life</h2>
+              <h2 className="text-base md:text-2xl">just tryna get through life</h2>
 
             </div>
           </div>
@@ -70,23 +70,23 @@ export default function Home() {
           {/* top decorative box */}
           <div className=" AOS absolute hidden md:block w-1/3 bg-slate-600 h-1/2 md:h-2/5 top-0"></div>
           {/* Image container */}
-          <div className=" flex w-4/5 md:w-2/5 m-5 max-w-[18rem] px-2">
+          <div className=" flex w-4/5 md:w-2/5 m-5 px-2 showBorder justify-center md:justify-end">
             <Image
               src={profilePic}
               alt="Picture of me"
-              className="z-10 AOS from-L"
+              className="z-10 AOS from-L w-full max-w-[18rem]"
             />
           </div>
           {/* text container */}
-          <div className="flex flex-col w-4/5 h-1/2 md:h-full justify-start"> 
+          <div className="flex flex-col w-5/6 md:w-3/5  md:h-full justify-center  showBorder"> 
             <div className="flex items-end md:h-2/5 ">
               {/* mobile decorative box */}
               <div className="absolute bg-slate-600 md:hidden w-1/2 h-[16rem] z-0 left-0"></div>
               <h1 className="AOS from-T text-2xl py-3 md:text-3xl md:py-5 text-white z-10">About me</h1>
             </div>
-            <span className=" absolute z-20 w-1/4 right-[3.5rem] -bottom-[10rem]  font-bold text-[13rem] md:text-[16rem] text-white/50">伟宏</span>   
-            <div className="AOS from-B flex md:h-3/5 z-30 pt-2">
-              <p className=" text-justify text-base">Lorem ipsum dolor sit amet, et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <span className="absolute z-20 w-1/4 right-[3.5rem] -bottom-[10rem]  font-bold text-[13rem] md:text-[16rem] text-white/50">伟宏</span>   
+            <div className="AOS from-B flex w-full md:w-4/5 md:h-3/5 z-30 pt-2">
+              <p className="text-justify text-base">Lorem ipsum dolor sit amet, et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
           </div>
         </section>
