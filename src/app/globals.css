@@ -19,8 +19,8 @@
     }
   }
   
-  html{ 
-    @apply scroll-smooth bg-pri overflow-x-hidden font-barlow text-sec
+  body,html{ 
+    @apply scroll-smooth bg-pri font-barlow text-sec
   }
 }
 
