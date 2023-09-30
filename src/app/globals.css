@@ -3,28 +3,29 @@
 @tailwind utilities;
 
 
-:root {
-  --primary: rgb(213, 200, 175);
-  --secondary: rgb(35, 33, 48);
-  --pri-dark: rgb(199, 184, 155);
-  --accent:white;
-}
-
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --primary: rgb(35, 33, 48);
-    --secondary:rgb(213, 200, 175);
-    --accent: white;
-  }
-} */
-
 @layer base
 {
-  html{ 
-    color: var(--secondary);
-    background: var(--primary);
-    overflow-x: hidden;
+  :root {
+    --pri:#d5c8af;
+    --sec:#2c313d;
+    --acc:#475569;
+    
   }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --pri:#2c313d;
+      --sec:#d5c8af;
+      --acc:#475569;
+    }
+  }
+  
+  html{ 
+    @apply scroll-smooth bg-pri overflow-x-hidden font-barlow text-sec
+  }
+}
+
+h1 {
+  @apply font-righteous
 }
 
 .showBorder{
@@ -41,9 +42,9 @@
   content: '';
   position: absolute;
   width: 0%;
-  height: 1px;
+  height: 1.5px;
   top: 50%;
-  margin-top: -0.5px;
+  margin-top: 0.5px;
 }
 
 .strike:before {
@@ -51,12 +52,12 @@
 }
 .strike:after {
   right: 2.5px;
-  background: var(--accent);
+  background: white;
   transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
 .strike:hover:before {
-  background: var(--accent);
+  background: white;
   width: 100%;
   transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
 }

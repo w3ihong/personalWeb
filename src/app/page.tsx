@@ -59,7 +59,7 @@ export default function Home() {
               <div className=" flex justify-end p-3">
                 <h2 className="flex text-base md:text-2xl">I'm </h2>
               </div>
-              <h1 className="text-base md:text-2xl">tryna get through life</h1>
+              <h2 className="text-base md:text-2xl">tryna get through life</h2>
 
             </div>
           </div>
@@ -77,7 +77,7 @@ export default function Home() {
               className="z-10 AOS from-L"
             />
             {/* chinese text */}
-            <span className=" absolute z-20 w-1/4 right-[3.5rem] font-bold text-[16rem] text-yellow-50">伟宏</span>
+            <span className=" absolute z-20 w-1/4 right-[3.5rem] font-bold text-[16rem] text-white/50">伟宏</span>
           </div>
           {/* text container */}
           <div className="flex flex-col w-4/5 h-1/2 md:h-full justify-start"> 

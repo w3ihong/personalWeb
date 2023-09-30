@@ -1,4 +1,4 @@
-import type { Config } from 'tailwindcss'
+ import type { Config } from 'tailwindcss'
 
 const config: Config = {
   content: [
@@ -10,13 +10,14 @@ const config: Config = {
     extend: {
       fontFamily:
       {
-        
+        righteous: ['var(--font-righteous)'],
+        barlow:['var(--font-barlow)']
       },
       colors:
       {
-        pri : 'rgb(213, 200, 175)',
-        sec :'rgb(35, 33, 48)',
-        priDark :'rgb(199, 184, 155)',
+        pri : 'var(--pri)',
+        sec :'var(--sec)',
+        accent: 'var(--acc)'
       }
     },
   },
