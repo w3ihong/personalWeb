@@ -11,7 +11,7 @@ export default function Home() {
   const [isIntersecting, setIsIntersecting] = useState(false);
   const ref = useRef(null);
 
-  const callBackFunc = (entries) => {
+  const callBackFunc = (entries : any) => {
     const [entry] = entries
     setIsIntersecting(entry.isIntersecting)
   }
@@ -26,11 +26,11 @@ export default function Home() {
 
   useEffect(() => {
     if (isIntersecting) {
-      ref.current.querySelectorAll(".AOS").forEach((el) => {
+      ref.current.querySelectorAll(".AOS").forEach((el :any) => {
         el.classList.add("slide-in");
       });
     } else {
-      ref.current.querySelectorAll(".AOS").forEach((el) => {
+      ref.current.querySelectorAll(".AOS").forEach((el :any) => {
         el.classList.remove("slide-in");
       });
     }
