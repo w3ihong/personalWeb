@@ -32,6 +32,18 @@ h1 {
   @apply outline outline-2 
 }
 
+.navItem {
+  @apply block px-8 py-6 float-right drop-shadow-xl
+}
+
+.footItem {
+  @apply block px-8 py-3 md:py-6 text-pri hover:bg-pri hover:text-sec hover:transition-all duration-300
+}
+
+.chiText {
+  @apply absolute z-20 w-1/4 right-[3.5rem] -bottom-[10rem] font-sc font-bold text-[13rem] md:text-[16rem] text-white/20
+}
+
 /* menu hover strike through animation */
 
 .strike {
@@ -90,10 +102,6 @@ h1 {
 
 .from-T {
   @apply -translate-y-[4rem]
-}
-
-.navItem {
-  @apply block px-8 py-6 float-right 
 }
 
 @media screen and (max-width: 639px) {

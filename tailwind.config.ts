@@ -11,7 +11,8 @@ const config: Config = {
       fontFamily:
       {
         righteous: ['var(--font-righteous)'],
-        barlow:['var(--font-barlow)']
+        barlow:['var(--font-barlow)'],
+        sc:['var(--font-sc)']
       },
       colors:
       {
