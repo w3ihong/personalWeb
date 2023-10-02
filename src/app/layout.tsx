@@ -1,7 +1,7 @@
 import './globals.css'
-import Nav from "@/components/nav";
-import Footer from "@/components/foot";
-import Favicon from "/public/favicon.ico";
+import Nav from "@/components/nav"
+import Footer from "@/components/foot"
+import Favicon from "/public/favicon.ico"
 import { Righteous } from 'next/font/google'
 import { Barlow_Semi_Condensed } from 'next/font/google'
 import { Noto_Sans_SC } from 'next/font/google'
@@ -21,7 +21,7 @@ const barlow = Barlow_Semi_Condensed({
 const chinese = Noto_Sans_SC({
   weight: '700',
   subsets: ['latin'],
-  variable:'--font-SC'
+  variable: '--font-SC'
 })
 
 export const metadata = {
@@ -36,7 +36,7 @@ export default function RootLayout({children}: {
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${barlow.variable} ${righteous.variable}`}>
+    <html lang="en" className={`${barlow.variable} ${righteous.variable} ${chinese.variable}`}>
       <body>
         <Nav/>
         <div className='overflow-x-hidden'>

@@ -1,10 +1,14 @@
 /* eslint-disable react/no-unescaped-entities */
 'use client'
 import { useState, useRef, useEffect } from "react"
+import Carou from "@/components/carousel"
+
 import Image from "next/image"
 import profilePic from "public/mirror.jpg"
-import Card from "./components/card"
 import logo from "public/mainLogoCrop.png"
+
+
+
 
 export default function Home() {
 
@@ -92,15 +96,14 @@ export default function Home() {
         </section>
 
         {/* Projects section */}
-        <section id="projects" className=" snap-start flex relative flex-col h-screen items-center justify-center px-5">
+        <section id="projects" className=" snap-start flex relative flex-col h-screen items-center justify-center px-10">
           <div className="absolute bg-sec h-3/5 w-full top-0"></div>
           <div className=" flex self-start items-end h-1/5 z-30 pl-3 pb-5">
             <h1 className="text-3xl  md:text-5xl text-white drop-shadow-xl">Projects</h1>
+            <p className=" pl-2 text-pri">I dont really have any projects yet, so heres a show and tell</p>
           </div>
-          <div className=" flex relative flex-row overflow-x-auto items-center gap-4 justify-center h-3/5 w-full z-10 bg-white/40"> 
-            <Card/>
-            <Card/>
-            <Card/>
+          <div className="h-2/3 w-full z-10 bg-white/40"> 
+            <Carou/>
           </div>
         </section>
 
