@@ -1,5 +1,4 @@
 'use client'
-import Script from "next/script"
 import Card from "@/components/card"
 
 import bean from "public/bean.jpg"
@@ -13,9 +12,12 @@ import 'swiper/css/pagination';
 import {Pagination} from 'swiper/modules';
 
 
-export default function Carousel() {
 
-    return (
+export default function Carousel () {
+
+    
+    return(
+
         <div className=" w-full h-full">
             <Swiper
                 spaceBetween={50}
@@ -49,33 +51,39 @@ export default function Carousel() {
                
                 </SwiperSlide>
             </Swiper>
-            {/* <Script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></Script>
-            <swiper-container space-between="30" pagination="true" pagination-clickable="true">
-                <swiper-slide>
-                    <Card 
-                        image={bean}
-                        altTxt = "a single bean"
-                        desc = "an image of fish's bean, i like rubbing it"/>
-                </swiper-slide>
-                <swiper-slide>
-                    <Card 
-                        image={fish}
-                        altTxt = "fish"
-                        desc = "my favourite fish"/>
-                </swiper-slide>
-                <swiper-slide>
-                    <Card 
-                        image={car}
-                        altTxt = "tomica toy car"
-                        desc = "Car that fish got me "/>
-                </swiper-slide>
-                <swiper-slide>
-                    <Card 
-                        image={burger}
-                        altTxt = "McD's scrambled egg burger"
-                        desc = "A very dissapointing scrambled egg burger from McDonalds , egg was not scrambeled. Made me big sad"/>
-                </swiper-slide>
-            </swiper-container> */}
         </div>
+
+
+
+        // <div>
+        //     <Script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></Script>
+        //     <swiper-container space-between="30" pagination="true" pagination-clickable="true">
+        //         <swiper-slide>
+        //             <Card 
+        //                 image={bean}
+        //                 altTxt = "a single bean"
+        //                 desc = "an image of fish's bean, i like rubbing it"/>
+        //         </swiper-slide>
+        //         <swiper-slide>
+        //             <Card 
+        //                 image={fish}
+        //                 altTxt = "fish"
+        //                 desc = "my favourite fish"/>
+        //         </swiper-slide>
+        //         <swiper-slide>
+        //             <Card 
+        //                 image={car}
+        //                 altTxt = "tomica toy car"
+        //                 desc = "Car that fish got me "/>
+        //         </swiper-slide>
+        //         <swiper-slide>
+        //             <Card 
+        //                 image={burger}
+        //                 altTxt = "McD's scrambled egg burger"
+        //                 desc = "A very dissapointing scrambled egg burger from McDonalds , egg was not scrambeled. Made me big sad"/>
+        //         </swiper-slide>
+        //     </swiper-container>
+        // </div>
+        
     )
 }

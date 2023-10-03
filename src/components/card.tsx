@@ -7,7 +7,7 @@ export default function Card({image, altTxt , desc}:{image: StaticImageData, alt
             <div className="flex w-full sm:w-2/3 h-full justify-end">
                 <Image src={image} alt={altTxt} className=" w-full !max-w-sm"/>
             </div>
-            <div className="w-3/4 sm:w-1/3 h-1/3 ">
+            <div className="w-3/4 md:w-1/3 h-1/3 ">
                 <p>{desc}</p>
             </div>
         </a>   

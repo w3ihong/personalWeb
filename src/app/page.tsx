@@ -78,7 +78,7 @@ export default function Home() {
             <Image
               src={profilePic}
               alt="Picture of me"
-              className="z-10 AOS from-L w-full max-w-[18rem]"
+              className="z-10 AOS  w-full max-w-[18rem]"
             />
           </div>
           {/* text container */}
@@ -89,7 +89,7 @@ export default function Home() {
               <h1 className="AOS from-T text-2xl py-3 md:text-3xl md:py-5 text-white z-10">About me</h1>
             </div>
             <span className="chiText">伟宏</span>   
-            <div className="AOS from-B flex w-full md:w-4/5 md:h-3/5 z-30 pt-2">
+            <div className="AOS flex w-full md:w-4/5 md:h-3/5 z-30 pt-2">
               <p className="text-justify text-base">Lorem ipsum dolor sit amet, et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
           </div>
@@ -97,10 +97,10 @@ export default function Home() {
 
         {/* Projects section */}
         <section id="projects" className=" snap-start flex relative flex-col h-screen items-center justify-center px-10">
-          <div className="absolute bg-sec h-3/5 w-full top-0"></div>
+          <div className="absolute bg-accent h-3/5 w-full top-0"></div>
           <div className=" flex self-start items-end h-1/5 z-30 pl-3 pb-5">
-            <h1 className="text-3xl  md:text-5xl text-white drop-shadow-xl">Projects</h1>
-            <p className=" pl-2 text-pri">I dont really have any projects yet, so heres a show and tell</p>
+            <h1 className="text-3xl  md:text-5xl text-white drop-shadow-xl">Projects/Work</h1>
+            <p className=" pl-2 text-sec">I dont really have any projects yet, so heres a show and tell</p>
           </div>
           <div className="h-2/3 w-full z-10 bg-white/40"> 
             <Carou/>
@@ -108,7 +108,7 @@ export default function Home() {
         </section>
 
         <section id="contact" className=" snap-start flex min-h-screen flex-wrap items-center justify-center">
-          <h1>Contact Fish flop flop </h1> 
+          <h1 className=" text-2xl">Will code for money. Please hit me up </h1> 
         </section>
       </div>
     </main>

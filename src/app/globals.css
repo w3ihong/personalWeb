@@ -37,7 +37,7 @@ h1 {
 }
 
 .footItem {
-  @apply block px-8 py-3 md:py-6 text-pri hover:bg-pri hover:text-sec hover:transition-all duration-300
+  @apply block  w-full sm:w-28 text-center py-3 md:py-6 text-pri hover:bg-pri hover:text-sec hover:transition-all duration-300
 }
 
 .chiText {
