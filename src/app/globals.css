@@ -37,7 +37,7 @@ h1 {
 }
 
 .chiText {
-  @apply absolute z-20 w-1/4 right-[3.5rem] -bottom-[10rem] font-sc font-bold text-[13rem] md:text-[16rem] text-white/20
+  @apply absolute z-20 w-1/4 right-[4.75rem] md:right-[3.5rem] md:-bottom-[10rem] font-sc font-bold text-[11rem] md:text-[15rem] text-white/20
 }
 
 /* menu hover strike through animation */

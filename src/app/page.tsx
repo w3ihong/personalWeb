@@ -42,7 +42,7 @@ export default function Home() {
 
   return (
     <main>
-      <div /*className=" snap-y snap-mandatory h-screen overflow-scroll"*/>
+      <div>
 
         {/* Hero */}
         <section id ="hero" className=" snap-start flex h-screen items-center justify-center">
@@ -98,9 +98,9 @@ export default function Home() {
         {/* Projects section */}
         <section id="projects" className=" snap-start flex relative w-full items-center justify-center py-32">
           <div className="absolute bg-accent h-[15rem] sm:h-[24rem] w-full top-0"></div>
-          <div className="flex flex-col sm:flex-row  justify-start w-full h-3/4 px-5 gap-y-4">
+          <div className="flex relative flex-col sm:flex-row  justify-start w-full h-3/4 px-5 gap-y-4">
 
-            <div className=" flex  self-start w-1/6  z-30 ">
+            <div className=" flex  self-start w-1/6  z-30 sticky top-20 sm:top-32">
               <h1 className=" text-3xl sm:text-4xl text-white sm:-rotate-90 sm:-ml-20 sm:mt-16">Projects/Work</h1>
               
             </div>
