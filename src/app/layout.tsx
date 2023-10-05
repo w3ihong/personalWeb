@@ -39,8 +39,8 @@ export default function RootLayout({children}: {
     <html lang="en" className={`${barlow.variable} ${righteous.variable} ${chinese.variable}`}>
       <body>
         <Nav/>
-        <div className='flex overflow-x-hidden justify-center '>
-          <div className=' mx-6 md:mx-16 lg:mx-32 xl:mx-64 max-w-6xl '>
+        <div className='flex overflow-x-hidden justify-center'>
+          <div className=' mx-6 md:mx-16 lg:mx-32 xl:mx-64 max-w-6xl'>
             {children}
           </div>
         </div>

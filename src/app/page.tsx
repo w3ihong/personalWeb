@@ -1,17 +1,13 @@
 /* eslint-disable react/no-unescaped-entities */
 'use client'
 import { useState, useRef, useEffect } from "react"
-import Carou from "@/components/carousel"
 
 import Image from "next/image"
 import profilePic from "public/mirror.jpg"
 import logo from "public/mainLogoCrop.png"
 
 import Card from "@/components/card"
-import bean from "public/bean.jpg"
-import car from "public/tomica.jpg"
-import fish from "public/fish.jpg"
-import burger from "public/burger.jpg"
+import webSS from "/public/webSS.png"
 
 
 export default function Home() {
@@ -100,17 +96,21 @@ export default function Home() {
         </section>
 
         {/* Projects section */}
-        <section id="projects" className=" snap-start flex relative flex-col h-screen w-full items-center justify-center ">
-          <div className="absolute bg-accent h-3/5 w-full top-0"></div>
-          <div className="flex flex-row w-full h-3/4 mr-8 md:mr-16">
+        <section id="projects" className=" snap-start flex relative w-full items-center justify-center py-32">
+          <div className="absolute bg-accent h-[15rem] sm:h-[24rem] w-full top-0"></div>
+          <div className="flex flex-col sm:flex-row  justify-start w-full h-3/4 px-5 gap-y-4">
 
-            <div className=" flex items-center justify-center  w-1/5 h-1/2 z-30 pt-24">
-              <h1 className="text-4xl text-white drop-shadow-xl -rotate-90">Projects/Work</h1>
-            </div>
-            <div className="h-full w-4/5 z-10 bg-white/40 items-center justify-center flex flex-col  overflow-scroll">   
+            <div className=" flex  self-start w-1/6  z-30 ">
+              <h1 className=" text-3xl sm:text-4xl text-white sm:-rotate-90 sm:-ml-20 sm:mt-16">Projects/Work</h1>
               
-               
             </div>
+            <div className="flex flex-col h-2/3 sm:h-4/5  md:h-full w-full  md:w-4/5 gap-44 ">
+              <Card image={webSS} altTxt={"Personal Portfolio Website"} desc={"My personal portfolio website created with nextjs"} /> 
+              <Card image={undefined} altTxt={""} desc={""}/>
+              <Card image={undefined} altTxt={""} desc={""}/>
+              
+            </div>
+            
           </div>
         </section>
               
