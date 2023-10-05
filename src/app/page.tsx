@@ -105,9 +105,9 @@ export default function Home() {
               
             </div>
             <div className="flex flex-col h-2/3 sm:h-4/5  md:h-full w-full  md:w-4/5 gap-44 ">
-              <Card image={webSS} altTxt={"Personal Portfolio Website"} desc={"My personal portfolio website created with nextjs"} /> 
-              <Card image={undefined} altTxt={""} desc={""}/>
-              <Card image={undefined} altTxt={""} desc={""}/>
+              <Card image={webSS} altTxt={"Personal Portfolio Website"} desc={"My personal portfolio website created with nextjs. Adapts to user's browser theme."} link={"https://github.com/Wei-H0ng/personalWeb"} /> 
+              <Card image={undefined} altTxt={""} desc={""} link={""}/>
+              <Card image={undefined} altTxt={""} desc={""} link={""}/>
               
             </div>
             
