@@ -10,7 +10,7 @@ export default function Footer() {
                     Resume</a>
                 <a className=" footItem" target="_blank" href="https://github.com/Wei-H0ng">
                     Git-Hub</a>
-                <a className=" footItem" >Email</a>
+                <a className=" footItem" href="mailto:weihongchew2@gmail.com">Email</a>
             </div>
         </footer>
     );

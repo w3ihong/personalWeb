@@ -32,10 +32,6 @@ h1 {
   @apply outline outline-2 outline-black
 }
 
-.navItem {
-  @apply block px-8 py-6 float-right drop-shadow-xl
-}
-
 .footItem {
   @apply block  w-full sm:w-28 text-center py-3 md:py-6 text-pri hover:bg-pri hover:text-sec hover:transition-all duration-300
 }

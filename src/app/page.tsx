@@ -7,7 +7,11 @@ import Image from "next/image"
 import profilePic from "public/mirror.jpg"
 import logo from "public/mainLogoCrop.png"
 
-
+import Card from "@/components/card"
+import bean from "public/bean.jpg"
+import car from "public/tomica.jpg"
+import fish from "public/fish.jpg"
+import burger from "public/burger.jpg"
 
 
 export default function Home() {
@@ -96,20 +100,21 @@ export default function Home() {
         </section>
 
         {/* Projects section */}
-        <section id="projects" className=" snap-start flex relative flex-col h-screen items-center justify-center px-10">
+        <section id="projects" className=" snap-start flex relative flex-col h-screen w-full items-center justify-center ">
           <div className="absolute bg-accent h-3/5 w-full top-0"></div>
-          <div className=" flex self-start items-end h-1/5 z-30 pl-3 pb-5">
-            <h1 className="text-3xl  md:text-5xl text-white drop-shadow-xl">Projects/Work</h1>
-            <p className=" pl-2 text-sec">I dont really have any projects yet, so heres a show and tell</p>
-          </div>
-          <div className="h-2/3 w-full z-10 bg-white/40"> 
-            <Carou/>
-          </div>
-        </section>
+          <div className="flex flex-row w-full h-3/4 mr-8 md:mr-16">
 
-        <section id="contact" className=" snap-start flex min-h-screen flex-wrap items-center justify-center">
-          <h1 className=" text-2xl">Will code for money. Please hit me up </h1> 
+            <div className=" flex items-center justify-center  w-1/5 h-1/2 z-30 pt-24">
+              <h1 className="text-4xl text-white drop-shadow-xl -rotate-90">Projects/Work</h1>
+            </div>
+            <div className="h-full w-4/5 z-10 bg-white/40 items-center justify-center flex flex-col  overflow-scroll">   
+              
+               
+            </div>
+          </div>
         </section>
+              
+        
       </div>
     </main>
   )

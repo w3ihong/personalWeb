@@ -18,12 +18,15 @@ export default function Carousel () {
     
     return(
 
-        <div className=" w-full h-full">
             <Swiper
-                spaceBetween={50}
-                slidesPerView={1}
-                pagination={true}
+                spaceBetween={30}
+                slidesPerView={2}
+                pagination={{
+                    clickable: true,
+                }}
+                loop ={true}
                 modules={[Pagination]}
+                className="showBorder"
                 >
                 <SwiperSlide>
                     <Card 
@@ -51,7 +54,7 @@ export default function Carousel () {
                
                 </SwiperSlide>
             </Swiper>
-        </div>
+        
 
 
 
