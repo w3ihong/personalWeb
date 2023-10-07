@@ -8,6 +8,7 @@ import logo from "public/mainLogoCrop.png"
 
 import Card from "@/components/card"
 import webSS from "/public/webSS.png"
+import webSSV from "/public/webSS-V.png"
 
 
 export default function Home() {
@@ -97,17 +98,17 @@ export default function Home() {
 
         {/* Projects section */}
         <section id="projects" className=" snap-start flex relative w-full items-center justify-center py-32">
-          <div className="absolute bg-accent h-[15rem] sm:h-[24rem] w-full top-0"></div>
-          <div className="flex relative flex-col sm:flex-row  justify-start w-full h-3/4 px-5 gap-y-4">
+          <div className="absolute bg-accent h-[18rem] sm:h-[24rem] w-full top-0"></div>
+          <div className="flex relative flex-col sm:flex-row  justify-start w-full h-3/4 px-5 gap-y-4 ">
 
-            <div className=" flex  self-start w-1/6  z-30 sticky top-20 sm:top-32">
+            <div className=" flex  self-start w-1/6  z-30 sticky top-20 sm:top-32 mb-4 pl-4">
               <h1 className=" text-3xl sm:text-4xl text-white sm:-rotate-90 sm:-ml-20 sm:mt-16">Projects/Work</h1>
               
             </div>
-            <div className="flex flex-col h-2/3 sm:h-4/5  md:h-full w-full  md:w-4/5 gap-44 ">
-              <Card image={webSS} altTxt={"Personal Portfolio Website"} desc={"My personal portfolio website created with nextjs. Adapts to user's browser theme."} link={"https://github.com/Wei-H0ng/personalWeb"} /> 
-              <Card image={undefined} altTxt={""} desc={""} link={""}/>
-              <Card image={undefined} altTxt={""} desc={""} link={""}/>
+            <div className="flex flex-col w-full md:w-4/5 gap-[15rem] px-6 sm:px-0">
+              <Card imageV={webSSV} image={webSS} altTxt={"Personal Portfolio Website"} desc={"My personal portfolio website created with react and tailwind. Device responsive and adapts to user's prefered theme. Click to checkout sourcecode in github."} link={"https://github.com/Wei-H0ng/personalWeb"} /> 
+              <Card imageV={undefined} image={undefined} altTxt={""} desc={""} link={""}/>
+              <Card imageV={undefined} image={undefined} altTxt={""} desc={""} link={""}/>
               
             </div>
             
