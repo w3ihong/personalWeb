@@ -90,8 +90,17 @@ export default function Home() {
               <h1 className="AOS from-T text-2xl py-3 md:text-3xl md:py-5 text-white z-10">About me</h1>
             </div>
             <span className="chiText">伟宏</span>   
-            <div className="AOS flex w-full md:w-4/5 md:h-3/5 z-30 pt-2">
-              <p className="text-justify text-base">Lorem ipsum dolor sit amet, et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div className="AOS flex flex-col w-full md:w-4/5 md:h-3/5 z-30 pt-2">
+              <p className="text-justify text-base">
+              Hi, I'm Wei Hong, a computer science undergraduate with a passion for bringing ideas to life through technology. 
+              I'm also intrigued by the FI/RE movement and have a keen interest in stocks and financial literacy.
+              </p>
+              <p className="text-justify text-base">
+              In my free time, you can find me enjoying chess, badminton, or a game of pool. 
+              My INTJ-A personality drives my analytical approach to problem-solving.
+              Here I showcase my work, share my journey, and hopefully connect with fellow tech and finance enthusiasts. 
+              Explore my work and reach out—I'd love to connect!
+              </p>
             </div>
           </div>
         </section>
@@ -106,7 +115,10 @@ export default function Home() {
               
             </div>
             <div className="flex flex-col w-full md:w-4/5 gap-[15rem] px-6 sm:px-0">
-              <Card imageV={webSSV} image={webSS} altTxt={"Personal Portfolio Website"} desc={"My personal portfolio website created with react and tailwind. Device responsive and adapts to user's prefered theme. Click to checkout sourcecode in github."} link={"https://github.com/Wei-H0ng/personalWeb"} /> 
+              <Card 
+                imageV={webSSV} image={webSS} 
+                altTxt={"Personal Portfolio Website"} 
+                desc={"My personal portfolio website created with react, typescript and tailwind. Device responsive and adapts to user's browser theme."} link={"https://github.com/Wei-H0ng/personalWeb"} /> 
               <Card imageV={undefined} image={undefined} altTxt={""} desc={""} link={""}/>
               <Card imageV={undefined} image={undefined} altTxt={""} desc={""} link={""}/>
               
