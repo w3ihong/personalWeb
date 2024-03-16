@@ -1,6 +1,6 @@
 import Image, { StaticImageData } from "next/image"
-import placeholder from "public/placeholder.png"
-import placeholderV from "public/placeholder-V.png"
+import placeholder from "/public/placeholder.png"
+import placeholderV from "/public/placeholder-V.png"
 
 export default function Card({link,image = placeholder, imageV = placeholderV, altTxt = "picture alt text", desc }:
 {link:string ,image: StaticImageData, imageV:StaticImageData, altTxt:string, desc:string}) {

@@ -3,8 +3,8 @@
 import { useState, useRef, useEffect } from "react"
 
 import Image from "next/image"
-import profilePic from "public/mirror.jpg"
-import logo from "public/mainLogoCrop.png"
+import profilePic from "/public/mirror.jpg"
+import logo from "/public/mainLogoCrop.png"
 
 import Card from "@/components/card"
 import webSS from "/public/webSS.png"

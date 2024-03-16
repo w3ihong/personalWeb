@@ -1,8 +1,8 @@
 "use client"
 import { useEffect } from 'react';
 import Image from "next/image";
-import burger from "public/burger.png";
-import logo from "public/mainLogoCrop.png";
+import burger from "/public/burger.png";
+import logo from "/public/mainLogoCrop.png";
 
 export default function Nav() {
 
