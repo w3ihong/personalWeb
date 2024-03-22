@@ -18,7 +18,8 @@ const config: Config = {
       {
         pri : 'var(--pri)',
         sec :'var(--sec)',
-        accent: 'var(--acc)'
+        accent: 'var(--acc)',
+        accent2: 'var(--acc2)'
       }
     },
   },

@@ -9,6 +9,7 @@
     --pri:#d5c8af;
     --sec:#2c313d;
     --acc:#475569;
+    --acc2:#F8F7F4;
     
   }
   @media (prefers-color-scheme: dark) {
@@ -60,12 +61,12 @@ h1 {
 }
 .strike:after {
   right: 2.5px;
-  background: white;
+  background: var(--acc2);
   transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
 .strike:hover:before {
-  background: white;
+  background: var(--acc2);
   width: 100%;
   transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
