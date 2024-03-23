@@ -46,7 +46,7 @@ export default function Home() {
       <div>
 
         {/* Hero */}
-        <section id ="hero" className=" snap-start flex h-screen items-center justify-center">
+        <section id ="hero" className="flex h-screen items-center justify-center">
           <div className="flex flex-col">
             <div className=" flex flex-row justify-center">
               <div className=" flex justify-end px-3 py-1 md:py-2">
@@ -71,7 +71,7 @@ export default function Home() {
         </section>
 
         {/* About me */} 
-        <section id="about" ref={ref} className=" snap-start flex relative h-screen flex-col sm:flex-row items-center justify-center ">
+        <section id="about" ref={ref} className="flex relative h-screen flex-col sm:flex-row items-center justify-center ">
           {/* top decorative box */}
           <div className=" AOS absolute hidden sm:block w-1/3 bg-slate-600 h-1/2 sm:h-2/5 top-0"></div>
           {/* Image container */}
@@ -105,8 +105,13 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Skills Section */}
+        <section id="skills" className="flex w-full h-svh">
+          <div></div>
+        </section>
+
         {/* Projects section */}
-        <section id="projects" className=" snap-start flex relative w-full items-center justify-center py-32">
+        <section id="projects" className="flex relative w-full items-center justify-center py-32">
           <div className="absolute bg-accent h-[18rem] sm:h-[24rem] w-full top-0"></div>
           <div className="flex relative flex-col sm:flex-row  justify-start w-full h-3/4 gap-y-4 ">
 

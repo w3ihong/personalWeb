@@ -40,7 +40,7 @@ export default function RootLayout({children}: {
       <body>
         <Nav/>
         <div className='flex  justify-center'>
-          <div className=' mx-6 md:mx-16 lg:mx-32 xl:mx-64 max-w-6xl'>
+          <div className='snap-y snap-proximity mx-6 md:mx-16 lg:mx-32 xl:mx-64 max-w-6xl'>
             {children}
           </div>
         </div>

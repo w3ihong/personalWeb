@@ -30,7 +30,7 @@ h1 {
 }
 
 .showBorder{
-  @apply outline outline-2 outline-black
+  @apply outline outline-2 outline-white
 }
 
 .footItem {
