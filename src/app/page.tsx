@@ -71,11 +71,11 @@ export default function Home() {
         </section>
 
         {/* About me */} 
-        <section id="about" ref={ref} className=" snap-start flex relative h-screen flex-col md:flex-row items-center justify-center ">
+        <section id="about" ref={ref} className=" snap-start flex relative h-screen flex-col sm:flex-row items-center justify-center ">
           {/* top decorative box */}
-          <div className=" AOS absolute hidden md:block w-1/3 bg-slate-600 h-1/2 md:h-2/5 top-0"></div>
+          <div className=" AOS absolute hidden sm:block w-1/3 bg-slate-600 h-1/2 sm:h-2/5 top-0"></div>
           {/* Image container */}
-          <div className=" flex w-4/5 md:w-2/5 m-5 px-2  justify-center md:justify-end">
+          <div className=" flex w-4/5 sm:w-2/5 m-5 px-2  justify-center sm:justify-end">
             <Image
               src={profilePic}
               alt="Picture of me"
@@ -83,14 +83,14 @@ export default function Home() {
             />
           </div>
           {/* text container */}
-          <div className="flex flex-col w-5/6 md:w-3/5  md:h-full justify-center "> 
-            <div className="flex items-end md:h-2/5 ">
+          <div className="flex flex-col w-5/6 sm:w-3/5  sm:h-full justify-center "> 
+            <div className="flex items-end sm:h-2/5 ">
               {/* mobile decorative box */}
-              <div className="absolute bg-slate-600 md:hidden w-1/2 h-[16rem] z-0 left-0"></div>
-              <h1 className="AOS from-T text-2xl py-3 md:text-3xl md:py-5 text-accent2 z-10">About me</h1>
+              <div className="absolute bg-slate-600 sm:hidden w-1/2 h-[16rem] z-0 left-0"></div>
+              <h1 className="AOS from-T text-2xl py-3 sm:text-3xl sm:py-5 text-accent2 z-10">About me</h1>
             </div>
             <span className="chiText">伟宏</span>   
-            <div className="AOS flex flex-col w-full md:w-4/5 md:h-3/5 z-30 pt-2">
+            <div className="AOS flex flex-col w-full sm:w-5/6 md:w-4/5 sm:h-3/5 z-30 pt-2 ">
               <p className="text-justify text-base">
               Hi, I'm Wei Hong, a computer science undergraduate with a passion for bringing ideas to life through technology. 
               I'm also intrigued by the FI/RE movement and have a keen interest in stocks and financial literacy.
@@ -108,13 +108,12 @@ export default function Home() {
         {/* Projects section */}
         <section id="projects" className=" snap-start flex relative w-full items-center justify-center py-32">
           <div className="absolute bg-accent h-[18rem] sm:h-[24rem] w-full top-0"></div>
-          <div className="flex relative flex-col sm:flex-row  justify-start w-full h-3/4 px-5 gap-y-4 ">
+          <div className="flex relative flex-col sm:flex-row  justify-start w-full h-3/4 gap-y-4 ">
 
-            <div className=" flex  self-start w-1/6  z-30 sticky top-20 sm:top-32 mb-4 pl-4">
-              <h1 className=" text-3xl sm:text-4xl text-accent2 sm:-rotate-90 sm:-ml-20 sm:mt-16">Projects/Work</h1>
-              
+            <div className=" flex self-start w-full sm:w-1/6 z-30 sticky top-20 sm:top-32 mb-2">
+              <h1 className="text-3xl sm:text-4xl  text-accent2 sm:-rotate-90 sm:mt-20 pl-6 sm:pl-0 ">Projects / Work</h1>
             </div>
-            <div className="flex flex-col w-full md:w-4/5 gap-[15rem] px-6 sm:px-0">
+            <div className="flex flex-col w-full sm:w-4/5 gap-[15rem] px-6 sm:px-0 ">
               <Card 
                 imageV={webSSV} image={webSS} 
                 altTxt={"Personal Portfolio Website"} 
@@ -123,7 +122,6 @@ export default function Home() {
               
               
             </div>
-            
           </div>
         </section>
               

@@ -34,7 +34,7 @@ h1 {
 }
 
 .footItem {
-  @apply block  w-full sm:w-28 text-center py-3 md:py-6 text-pri hover:bg-pri hover:text-sec hover:transition-all duration-300
+  @apply block w-full sm:w-28 text-center py-3 md:py-6 text-pri hover:bg-pri hover:text-sec hover:transition-all duration-300
 }
 
 .chiText {
@@ -101,6 +101,7 @@ h1 {
   @apply -translate-y-[4rem]
 }
 
+/* for responsive nav */
 @media screen and (max-width: 639px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.burger {
