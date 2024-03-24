@@ -82,7 +82,7 @@ h1 {
 }
 
 .AOS {
-  @apply  opacity-0 transition-all ease-in duration-1000
+  @apply  opacity-0 transition-all ease-out duration-1000
 }
 
 .from-R {
@@ -107,9 +107,9 @@ h1 {
   .topnav a.burger {
     @apply float-right block                                                                                                                                                             
   }
-  .AOS {
+  /* .AOS {
     @apply transition-none !translate-x-0 !translate-y-0 !opacity-100
-  }
+  } */
 }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon.*/

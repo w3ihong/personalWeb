@@ -34,11 +34,7 @@ export default function Home() {
       ref.current.querySelectorAll(".AOS").forEach((el :any) => {
         el.classList.add("slide-in");
       });
-    } else {
-      ref.current.querySelectorAll(".AOS").forEach((el :any) => {
-        el.classList.remove("slide-in");
-      });
-    }
+    } 
   }, [isIntersecting]);
 
   return (
@@ -73,24 +69,24 @@ export default function Home() {
         {/* About me */} 
         <section id="about" ref={ref} className="flex relative h-screen flex-col sm:flex-row items-center justify-center ">
           {/* top decorative box */}
-          <div className=" AOS absolute hidden sm:block w-1/3 bg-slate-600 h-1/2 sm:h-2/5 top-0"></div>
+          <div className=" AOS from-B absolute hidden sm:block w-1/3 bg-slate-600 h-1/2 sm:h-2/5 top-0"></div>
           {/* Image container */}
           <div className=" flex w-4/5 sm:w-2/5 m-5 px-2  justify-center sm:justify-end">
             <Image
               src={profilePic}
               alt="Picture of me"
-              className="z-10 AOS  w-full max-w-[18rem]"
+              className="z-10 AOS from-B delay-300 w-full max-w-[18rem]"
             />
           </div>
           {/* text container */}
           <div className="flex flex-col w-5/6 sm:w-3/5  sm:h-full justify-center "> 
             <div className="flex items-end sm:h-2/5 ">
               {/* mobile decorative box */}
-              <div className="absolute bg-slate-600 sm:hidden w-1/2 h-[16rem] z-0 left-0"></div>
-              <h1 className="AOS from-T text-2xl py-3 sm:text-3xl sm:py-5 text-accent2 z-10">About me</h1>
+              <div className="absolute bg-slate-600 sm:hidden w-1/2 h-[16rem] z-0 left-0 "></div>
+              <h1 className="AOS from-B delay-150 text-2xl py-3 sm:text-3xl sm:py-5 text-accent2 z-10">About me</h1>
             </div>
             <span className="chiText">伟宏</span>   
-            <div className="AOS flex flex-col w-full sm:w-5/6 md:w-4/5 sm:h-3/5 z-30 pt-2 ">
+            <div className="AOS from-B delay-500 flex flex-col w-full sm:w-5/6 md:w-4/5 sm:h-3/5 z-30 pt-2 ">
               <p className="text-justify text-base">
               Hi, I'm Wei Hong, a computer science undergraduate with a passion for bringing ideas to life through technology. 
               I'm also intrigued by the FI/RE movement and have a keen interest in stocks and financial literacy.
