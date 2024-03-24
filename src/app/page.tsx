@@ -101,10 +101,18 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Skills Section */}
-        <section id="skills" className="flex w-full h-svh">
-          <div></div>
-        </section>
+        {/* Skills Section
+        <section id="skills" className="flex w-full h-svh pb-12">
+          <div className="flex-auto flex-col w-full h-96  showBorder">
+            <div className="grid grid-cols-1 sm:grid-cols-3 h-4/5 showBorder p-6">
+              <div className="w-full h-full showBorder"></div>
+            </div>
+            <div className="flex h-16 place-content-center">
+              <h1 className="font-bold text-4xl sm:text-6xl lg:text-7xl text-accent2 -mt-10 sm:-mt-12" >Proficiencies</h1>
+            </div>
+            
+          </div>
+        </section> */}
 
         {/* Projects section */}
         <section id="projects" className="flex relative w-full items-center justify-center py-32">
@@ -118,7 +126,8 @@ export default function Home() {
               <Card 
                 imageV={webSSV} image={webSS} 
                 altTxt={"Personal Portfolio Website"} 
-                desc={"My personal portfolio website created with react, typescript and tailwind. Device responsive and adapts to user's browser theme."} link={"https://github.com/Wei-H0ng/personalWeb"} /> 
+                desc={"My personal portfolio website created with react, typescript and tailwind. Device responsive and adapts to user's browser theme."} 
+                link={"https://github.com/w3ihong/personalWeb"} /> 
               <Card imageV={undefined} image={undefined} altTxt={""} desc={""} link={""}/>
               
               
