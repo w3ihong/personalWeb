@@ -7,7 +7,7 @@ export default function Footer() {
                     Resume</a>
                 <a className=" footItem" target="_blank" href="github.com/w3ihong">
                     Git-Hub</a>
-                <a className=" footItem" href="mailto:weihongchew2@gmail.com">Email</a>
+                <a className=" footItem" href="mailto:hey.weihong@gmail.com">Email</a>
             </div>
         </footer>
     );
