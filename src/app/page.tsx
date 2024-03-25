@@ -22,7 +22,7 @@ export default function Home() {
   }
 
   useEffect(() => {
-    const observer = new IntersectionObserver(callBackFunc,{ rootMargin: "-200px" });
+    const observer = new IntersectionObserver(callBackFunc,{ rootMargin: "-100px" });
     console.log(isIntersecting);
     observer.observe(ref.current);
 
@@ -103,11 +103,12 @@ export default function Home() {
 
         {/* Skills Section
         <section id="skills" className="flex w-full h-svh pb-12">
-          <div className="flex-auto flex-col w-full h-96  showBorder">
-            <div className="grid grid-cols-1 sm:grid-cols-3 h-4/5 showBorder p-6">
-              <div className="w-full h-full showBorder"></div>
+          <div className="flex-auto flex-col w-full h-auto  showBorder">
+            <div className="grid w-full h-auto showBorder pb-6 px-12 sm:px-24 ">
+              <div className="min-w-64 min-h-64 showBorder">things</div>
+              
             </div>
-            <div className="flex h-16 place-content-center">
+            <div className="flex h-24 place-content-center">
               <h1 className="font-bold text-4xl sm:text-6xl lg:text-7xl text-accent2 -mt-10 sm:-mt-12" >Proficiencies</h1>
             </div>
             
